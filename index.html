@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="content-menu">
+        <div class="logo flex">
+          <img src="./assets/logo.svg" alt="Logo-da-pagina" />
+        </div>
+        <nav>
+          <div class="menu flex" id="nav">
+            <div class="menu-nav-page flex" id="menu">
+              <ul class="menu-toggle flex">
+                <li>
+                  <a href="#" onclick="closeMenu()">Posts</a>
+                </li>
+                <li><a href="#" onclick="closeMenu()">Ferramentas</a></li>
+                <li>
+                  <a href="#" onclick="closeMenu()">Eventos</a>
+                </li>
+                <li><a href="#" onclick="closeMenu()">Pessoas</a></li>
+                <li><a href="#" onclick="closeMenu()">Grupos</a></li>
+                <div class="section-select"></div>
+                <div class="btn-menu-toggle">
+                  <button class="btn-primary" onclick="closeMenu()">
+                    Fale conosco
+                  </button>
+                </div>
+              </ul>
+            </div>
+            <button id="btn-mobile">
+              <span id="hamburger">-</span>
+              <span id="hamburger">-</span>
+              <span id="hamburger">-</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <section id="home">
+        <div class="container flex-colum">
+          <div class="text-content flex-colum">
+            <div class="text">
+              <h1>Conheça o mais novo desafio da DevBoost.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                tellus lacus amet, euismod curabitur vitae. Non lorem ipsum.
+              </p>
+            </div>
+            <div class="btn">
+              <button class="btn-primary">Saiba mais</button>
+            </div>
+          </div>
+          <div class="img-content">
+            <img
+              src="./assets/img-home.png"
+              alt="imagen-de-uma-pessoa-sorridente-usando-um-tablet"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="benefits">
+        <div class="container flex-colum">
+          <div class="text-ifo-section">
+            <p class="purple">Soluções</p>
+            <h2 class="text-sections">
+              Compreendemos as reais necessidades dos nossos clientes
+            </h2>
+          </div>
+          <div class="services-cards">
+            <div class="card">
+              <div class="image-card">
+                <img src="./assets/icon-computer.svg" alt="" />
+              </div>
+              <div class="card-text">
+                <h3>Projetos Incentivados</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
+                  velit euismod eu egestas congue facilisis pellentesque justo.
+                </p>
+                <button class="btn-card">Saiba mais</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-card">
+                <img src="assets/icon-gear.svg" alt="" />
+              </div>
+              <div class="card-text">
+                <h3>Transformação Digital</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam, urna ullamcorper nullam eu. Tempus volutpat eget
+                  donec tortor.
+                </p>
+                <button class="btn-card">Saiba mais</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image-card">
+                <img src="./assets/icon-lamp.svg" alt="" />
+              </div>
+              <div class="card-text">
+                <h3>Pesquisa, Desenvolvimento</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Feugiat adipiscing arcu erat montes, tincidunt nec nisi.
+                  Lectus blandit.
+                </p>
+                <button class="btn-card">Saiba mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="text-about flex-colum">
+            <h2 class="text-sections">Um pouco de Quem somos</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+              aliquet sit velit venenatis nisl consequat placerat justo. Felis,
+              nisl, dui eu facilisi a aliquet id ultrices viverra.
+            </p>
+            <div class="btn">
+              <button class="btn-primary">Saiba mais</button>
+            </div>
+          </div>
+          <div class="video-about">
+            <img
+              class="image-video-example"
+              src="./assets/exemple-img-vídeo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="container flex-colum">
+          <div class="text-ifo-section">
+            <p class="purple">Soluções</p>
+            <h2 class="text-testimonials-info">O que falam nossos clientes</h2>
+          </div>
+          <div class="cards-testimonials">
+            <div class="card-testimony border">
+              <div class="text-testimony">
+                <img
+                  class="quotation-marks"
+                  src="./assets/icon-quotation-marks.svg"
+                  alt=""
+                />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam urna, a aenean tortor, ultrices lorem euismod.
+                  Pellentesque vel lobortis aliquam sed lobortis. Suspendisse
+                  ornare eu auctor urna sed. Sed nulla etiam rhoncus nulla.
+                </p>
+              </div>
+              <div class="perfil">
+                <img src="./assets/img-perfil1.png" alt="" />
+                <span>
+                  <p class="name">Fernando Pereira</p>
+                  <p class="job">Co-fundador</p>
+                </span>
+              </div>
+            </div>
+            <div class="card-testimony">
+              <div class="text-testimony">
+                <img
+                  class="quotation-marks"
+                  src="./assets/icon-quotation-marks.svg"
+                  alt=""
+                />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  duis phasellus tempor condimentum at sit proin. Cras et
+                  integer sed id ut mauris. In suscipit hendrerit mattis id
+                  sapien lorem.
+                </p>
+              </div>
+              <div class="perfil">
+                <img src="./assets/img-perfil2.png" alt="" />
+                <span>
+                  <p class="name">Fernando Pereira</p>
+                  <p class="job">Co-fundador</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

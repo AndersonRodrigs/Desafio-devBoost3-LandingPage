@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+
+:root {
+  /* Colors */
+  --Bg-Gradient: linear-gradient(
+    180deg,
+    #040926 -6.13%,
+    rgba(153, 7, 204, 0.24) 124.8%
+  );
+
+  --Primary-Dark: #72009a;
+  --Primary-Normal: #9907cc;
+  --Primary-Light: #b01be3;
+
+  --Secundary-Normal: #040926;
+  --Secundary-Dark: #000106;
+
+  --Text-Color1: #ffffff;
+  --Text-Color2: #dfdfdf;
+
+  /* Fonts */
+  --Inter: 'Inter', sans-serif;
+  --Ubuntu: 'Ubuntu', sans-serif;
+
+  /* Transitions */
+  --Transition-temp: 0.25s;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--Inter);
+  background-color: var(--Secundary-Normal);
+}
+
+.container {
+  padding-inline: 4%;
+}
+
+.btn-primary {
+  display: flex;
+  background-color: var(--Primary-Normal);
+  color: var(--Text-Color1);
+  align-items: center;
+  padding: 10px 34px;
+  border-radius: 38px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background var(--Transition-temp);
+}
+
+.btn-primary:hover {
+  background-color: var(--Primary-Light);
+}
+
+.flex-colum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*//// MOBILE ////*/
+/* Header */
+
+header {
+  padding: 22px 0;
+  background: var(--Bg-Gradient);
+  background-color: var(--Primary-Normal);
+}
+
+header .content-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  gap: 35px;
+}
+
+.menu-toggle li {
+  position: relative;
+}
+
+.menu-toggle li a::after {
+  display: flex;
+  content: '';
+  position: absolute;
+  top: 27px;
+  width: 0%;
+  height: 4px;
+  background-color: var(--Primary-Dark);
+
+  transition: var(--Transition-temp);
+}
+
+.menu-toggle li:hover a::after {
+  width: 100%;
+}
+
+.menu-toggle li a {
+  font-size: 15px;
+  color: var(--Text-Color1);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Section Home*/
+
+#home {
+  padding-top: 112px;
+  margin-bottom: 20px;
+}
+
+#home .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-content {
+  width: 100%;
+  max-width: 748px;
+}
+
+.text-content .text h1 {
+  font-size: 33px;
+  margin-bottom: 8px;
+  line-height: 52px;
+  color: var(--Text-Color1);
+}
+
+.text-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  line-height: 27px;
+  color: var(--Text-Color2);
+}
+
+.img-content img {
+  width: 100%;
+  max-width: 640px;
+  margin-top: 70px;
+}
+
+/* Section Benefits*/
+
+#benefits {
+  padding-top: 88px;
+  padding-bottom: 90px;
+}
+
+.text-ifo-section {
+  width: 100%;
+  max-width: 444px;
+  margin-bottom: 47px;
+}
+
+.purple {
+  font-size: 15px;
+  color: var(--Primary-Normal);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-sections {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--Text-Color1);
+  font-family: var(--Ubuntu);
+}
+
+.services-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+}
+
+.services-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 332px;
+}
+
+.card .image-card {
+  display: flex;
+  justify-content: center;
+  width: 89px;
+  height: 89px;
+  background: rgba(153, 7, 204, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.card-text h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--Text-Color1);
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--Text-Color2);
+}
+
+.btn-card {
+  margin-top: 14px;
+  background-color: var(--Primary-Normal);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 7px 22px;
+  border-radius: 24px;
+  color: var(--Text-Color1);
+  cursor: pointer;
+  transition: background var(--Transition-temp);
+}
+
+.btn-card:hover {
+  background: var(--Primary-Light);
+}
+
+/* Section About */
+
+#about {
+  padding-top: 77px;
+  padding-bottom: 130px;
+  background: var(--Bg-Gradient);
+  background-color: var(--Primary-Normal);
+}
+
+#about .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-about {
+  width: 100%;
+  max-width: 459px;
+}
+
+.text-about p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: var(--Text-Color2);
+  margin-top: 14px;
+}
+
+#about .btn-primary {
+  background-color: var(--Text-Color1);
+  color: var(--Primary-Dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 21px;
+  margin-bottom: 86px;
+}
+
+#about .btn-primary:hover {
+  background-color: var(--Primary-Normal);
+  color: var(--Text-Color1);
+}
+
+.video-about .image-video-example {
+  width: 100%;
+  max-width: 520px;
+  z-index: 100;
+}
+
+/* Testimonials */
+
+#testimonials {
+  padding-top: 95px;
+  padding-bottom: 74px;
+}
+
+.text-testimonials-info {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--Text-Color1);
+}
+
+.cards-testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-testimonials .card-testimony {
+  position: relative;
+  width: 100%;
+  max-width: 488px;
+}
+
+.border {
+  padding-bottom: 32px;
+  margin-bottom: 57px;
+  border-bottom: 2px solid #b11be34b;
+}
+
+.text-testimony .quotation-marks {
+  margin-bottom: 14px;
+}
+
+.text-testimony p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Text-Color2);
+  margin-bottom: 16px;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+}
+
+.perfil .name {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--Primary-Normal);
+}
+
+.perfil .job {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--Text-Color2);
+}
