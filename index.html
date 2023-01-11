@@ -9,44 +9,46 @@
   </head>
   <body>
     <header>
-      <div class="content-menu">
+      <div class="container nav">
         <div class="logo flex">
           <img src="./assets/logo.svg" alt="Logo-da-pagina" />
         </div>
-        <nav>
-          <div class="menu flex" id="nav">
-            <div class="menu-nav-page flex" id="menu">
-              <ul class="menu-toggle flex">
-                <li>
-                  <a href="#" onclick="closeMenu()">Posts</a>
-                </li>
-                <li><a href="#" onclick="closeMenu()">Ferramentas</a></li>
-                <li>
-                  <a href="#" onclick="closeMenu()">Eventos</a>
-                </li>
-                <li><a href="#" onclick="closeMenu()">Pessoas</a></li>
-                <li><a href="#" onclick="closeMenu()">Grupos</a></li>
-                <div class="section-select"></div>
-                <div class="btn-menu-toggle">
-                  <button class="btn-primary" onclick="closeMenu()">
-                    Fale conosco
-                  </button>
-                </div>
-              </ul>
+
+        <nav id="nav">
+          <div id="menu" class="menu-nav-page flex">
+            <ul class="menu-links flex">
+              <li onclick="closeMenu()">
+                <a href="#home">Home</a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#benefits">Benefícios</a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#about">Sobre</a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#testimonials">Depoimento</a>
+              </li>
+            </ul>
+            <div class="section-select"></div>
+            <div class="btn-menu">
+              <a href="#footer" onclick="closeMenu()" class="btn-primary">
+                Fale conosco
+              </a>
             </div>
-            <button id="btn-mobile">
-              <span id="hamburger">-</span>
-              <span id="hamburger">-</span>
-              <span id="hamburger">-</span>
-            </button>
           </div>
+          <button id="btn-mobile">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </button>
         </nav>
       </div>
       <section id="home">
         <div class="container">
           <div class="text-content flex-colum">
             <div class="text">
-              <h1>Conheça o mais novo desafio da DevBoost.</h1>
+              <h1>Conheça o mais novo desafio da DevBoost<span>.</span></h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 tellus lacus amet, euismod curabitur vitae. Non lorem ipsum.
@@ -237,7 +239,7 @@
             <span class="title">
               <img src="./assets/icon-privacy.svg" alt="" />
               LGPD
-            </span> 
+            </span>
             <ul>
               <li>Política de Privacidade</li>
               <li>Uso de cookies</li>
@@ -250,5 +252,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
