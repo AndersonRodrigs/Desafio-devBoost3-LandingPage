@@ -84,6 +84,7 @@ body {
 header {
   background: var(--Bg-Gradient);
   background-color: var(--Primary-Normal);
+  padding-bottom: 20px;
 }
 
 header .container-menu {
@@ -170,7 +171,7 @@ header .container-menu {
     transition: 0.6s;
     overflow: hidden;
     visibility: hidden;
-    z-index: 10000;
+    z-index: 1000;
   }
 
   #nav.active #menu {
@@ -249,16 +250,12 @@ header .container-menu {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-/* .menu-nav-page{
-  display: none;
-} */
-
 /* Section Home*/
 
 #home {
-  padding-top: 122px;
-  margin-bottom: 20px;
+  padding-top: 70px;
   top: 0;
+  margin-bottom: 20px;
 }
 
 #home .container {
@@ -301,7 +298,7 @@ header .container-menu {
 /* Section Benefits*/
 
 #benefits {
-  padding-top: 108px;
+  padding-top: 180px;
   padding-bottom: 90px;
 }
 
@@ -326,7 +323,7 @@ header .container-menu {
   font-family: var(--Ubuntu);
 }
 
-.services-cards {
+.benefits-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -334,7 +331,7 @@ header .container-menu {
   gap: 36px;
 }
 
-.services-cards .card {
+.benefits-cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,7 +385,7 @@ header .container-menu {
 /* Section About */
 
 #about {
-  padding-top: 107px;
+  padding-top: 187px;
   padding-bottom: 130px;
   background: var(--Bg-Gradient);
   background-color: var(--Primary-Normal);
@@ -432,13 +429,12 @@ header .container-menu {
 .video-about .image-video-example {
   width: 100%;
   max-width: 520px;
-  z-index: 100;
 }
 
 /* Testimonials */
 
 #testimonials {
-  padding-top: 105px;
+  padding-top: 185px;
   padding-bottom: 74px;
 }
 
@@ -639,6 +635,7 @@ footer .title {
   border-radius: 50%;
   padding-left: 2px;
   transition: background 0.3s;
+  z-index: 1;
 }
 
 #btn-back-to-top:hover {

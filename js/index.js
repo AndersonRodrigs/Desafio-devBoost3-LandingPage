@@ -4,7 +4,6 @@ onScroll()
 function onScroll() {
   showNav()
   showBtnToTop()
-  console.log('scrool')
 }
 
 function showNav() {
@@ -17,7 +16,6 @@ function showNav() {
 }
 
 function showBtnToTop() {
-  console.log("asasa")
   const btnToTop = document.querySelector('#btn-back-to-top')
   if (scrollY > 450) {
     btnToTop.classList.add('show-btn')
