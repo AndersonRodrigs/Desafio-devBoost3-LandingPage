@@ -82,24 +82,26 @@ body {
 /* Header */
 
 header {
-  padding: 22px 0;
   background: var(--Bg-Gradient);
   background-color: var(--Primary-Normal);
 }
 
-header .container {
+header .container-menu {
+  padding: 22px 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 4%;
 }
 
-header .nav {
+.container-menu.nav-menu {
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 22px;
+  padding: 22px 4%;
+
+  background-color: var(--Secundary-Normal);
+  box-shadow: 0px 0px 10px 2px var(--Primary-Normal);
 }
 
 .flex {
@@ -161,7 +163,7 @@ header .nav {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 79px;
+    top: 85px;
     right: 0px;
     height: 0px;
     background-color: var(--Secundary-Normal);
@@ -172,7 +174,7 @@ header .nav {
   }
 
   #nav.active #menu {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     visibility: visible;
   }
 
@@ -203,6 +205,7 @@ header .nav {
   }
 
   .menu-links li a {
+    font-size: 20px;
     padding: 1rem 0;
     margin: 0 1rem;
   }
@@ -253,8 +256,9 @@ header .nav {
 /* Section Home*/
 
 #home {
-  padding-top: 112px;
+  padding-top: 122px;
   margin-bottom: 20px;
+  top: 0;
 }
 
 #home .container {
@@ -297,7 +301,7 @@ header .nav {
 /* Section Benefits*/
 
 #benefits {
-  padding-top: 88px;
+  padding-top: 108px;
   padding-bottom: 90px;
 }
 
@@ -384,7 +388,7 @@ header .nav {
 /* Section About */
 
 #about {
-  padding-top: 77px;
+  padding-top: 107px;
   padding-bottom: 130px;
   background: var(--Bg-Gradient);
   background-color: var(--Primary-Normal);
@@ -434,7 +438,7 @@ header .nav {
 /* Testimonials */
 
 #testimonials {
-  padding-top: 95px;
+  padding-top: 105px;
   padding-bottom: 74px;
 }
 
@@ -622,6 +626,46 @@ footer .title {
   height: 24px;
 }
 
+/* Btn Back To Top */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 35px;
+  cursor: pointer;
+  background: var(--Text-Color1);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding-left: 2px;
+  transition: background 0.3s;
+}
+
+#btn-back-to-top:hover {
+  background: #ae05ec27;
+}
+
+#btn-back-to-top a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-back-to-top img {
+  display: flex;
+  transform: rotate(179deg);
+  width: 30px;
+  height: 30px;
+}
+
+#btn-back-to-top {
+  display: none;
+}
+
+#btn-back-to-top.show-btn {
+  display: flex;
+}
 /* Desktop */
 
 @media screen and (min-width: 990px) {
