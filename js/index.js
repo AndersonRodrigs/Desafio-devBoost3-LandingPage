@@ -37,19 +37,12 @@ function activateMenuSection(section) {
   const sectionHeight = section.offsetHeight
   console.log(sectionHeight)
 
-  // o topo da seção chegou ou ultrapassou da linha alvo
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-  // verificar se a base está abaixo da linha alvo
-  // quais dados vou precisar?
-
-  //a seção termina onde?
   const sectionEndsAt = sectionTop + sectionHeight
 
-  // o final da seção passou da linha alvo
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-  // limites da seção
   const sectionBoundaries =
     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
@@ -63,3 +56,18 @@ function activateMenuSection(section) {
     menuElement.classList.add('active-link')
   }
 }
+
+ScrollReveal({
+  origin: 'top',
+  distance: '90px',
+  duration: 700,
+  delay: 200
+}).reveal(`
+#home,
+#home .img-content,
+#benefits .container,
+#benefits .container .card,
+#about .container,
+#about .container .video-about,
+#testimonials .container,
+#testimonials .container .card-testimony`)

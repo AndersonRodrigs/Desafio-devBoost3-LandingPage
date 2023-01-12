@@ -19,7 +19,7 @@
 
   --Primary-Dark: #72009a;
   --Primary-Normal: #9907cc;
-  --Primary-Light: #b01be3;
+  --Primary-Light: #c21afa;
 
   --Secundary-Normal: #040926;
   --Secundary-Dark: #000106;
@@ -55,15 +55,19 @@ body {
 }
 
 .btn-primary {
+  cursor: pointer;
+
   display: flex;
-  background-color: var(--Primary-Normal);
-  color: var(--Text-Color1);
   align-items: center;
   padding: 10px 34px;
-  border-radius: 38px;
+
   font-size: 15px;
   font-weight: 400;
-  cursor: pointer;
+
+  color: var(--Text-Color1);
+  background-color: var(--Primary-Normal);
+  border-radius: 38px;
+
   transition: background var(--Transition-temp);
 }
 
@@ -82,27 +86,32 @@ body {
 /* Header */
 
 header {
-  background: var(--Bg-Gradient);
-  background-color: var(--Primary-Normal);
   padding-bottom: 20px;
+
+  background-color: var(--Primary-Normal);
+  background: var(--Bg-Gradient);
 }
 
 header .container-menu {
-  padding: 22px 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 22px 4%;
 }
 
 .container-menu.nav-menu {
-  display: flex;
   position: fixed;
   top: 0;
+
+  display: flex;
   width: 100%;
   padding: 22px 4%;
 
   background-color: var(--Secundary-Normal);
   box-shadow: 0px 0px 10px 2px var(--Primary-Normal);
+
+  z-index: 100;
 }
 
 .flex {
@@ -122,12 +131,14 @@ header .container-menu {
 }
 
 #menu .menu-links li a::after {
-  display: flex;
   content: '';
   position: absolute;
   top: 27px;
+
+  display: flex;
   width: 0%;
   height: 4px;
+
   background-color: var(--Primary-Dark);
 
   transition: var(--Transition-temp);
@@ -147,35 +158,41 @@ header .container-menu {
 }
 
 #btn-mobile {
-  display: none;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
   border: none;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  display: none;
 }
 
 #btn-mobile div {
+  margin: 8px 0;
   width: 32px;
   height: 3px;
+
   border-radius: 7px;
   background-color: #fff;
-  margin: 8px 0;
   transition: 0.3s;
 }
 
 @media screen and (max-width: 900px) {
   #menu {
     position: absolute;
+    top: 85px;
+    right: 0px;
+
     display: block;
     flex-direction: column;
     width: 100%;
-    top: 85px;
-    right: 0px;
     height: 0px;
+
     background-color: var(--Secundary-Normal);
-    transition: 0.45s;
-    overflow: hidden;
-    visibility: hidden;
     z-index: 1000;
+
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.45s;
   }
 
   #nav.active #menu {
@@ -199,8 +216,8 @@ header .container-menu {
   }
 
   .menu-links {
-    padding-top: 80px;
     flex-direction: column;
+    padding-top: 80px;
     margin: 0;
   }
 
@@ -258,7 +275,6 @@ header .container-menu {
 
 #home {
   padding-top: 70px;
-  top: 0;
   margin-bottom: 40px;
 }
 
@@ -288,8 +304,9 @@ header .container-menu {
 .text-content .text p {
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 14px;
   line-height: 27px;
+  margin-bottom: 14px;
+
   color: var(--Text-Color2);
 }
 
@@ -314,17 +331,20 @@ header .container-menu {
 
 .purple {
   font-size: 15px;
-  color: var(--Primary-Normal);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  color: var(--Primary-Normal);
 }
 
 .text-sections {
+  font-family: var(--Ubuntu);
+
   font-size: 28px;
   line-height: 40px;
   font-weight: 700;
+
   color: var(--Text-Color1);
-  font-family: var(--Ubuntu);
 }
 
 .benefits-cards {
@@ -348,18 +368,21 @@ header .container-menu {
   justify-content: center;
   width: 89px;
   height: 89px;
-  background: rgba(153, 7, 204, 0.1);
-  border-radius: 50%;
+
   padding: 20px;
   margin-bottom: 22px;
+
+  border-radius: 50%;
+  background: rgba(153, 7, 204, 0.1);
 }
 
 .card-text h3 {
-  font-weight: 400;
   font-size: 22px;
+  font-weight: 400;
   line-height: 27px;
-  color: var(--Text-Color1);
+
   margin-bottom: 8px;
+  color: var(--Text-Color1);
 }
 
 .card-text p {
@@ -370,15 +393,17 @@ header .container-menu {
 }
 
 .btn-card {
-  margin-top: 14px;
-  background-color: var(--Primary-Normal);
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
-  padding: 7px 22px;
-  border-radius: 24px;
-  color: var(--Text-Color1);
+
   cursor: pointer;
+  margin-top: 14px;
+  border-radius: 24px;
+  padding: 7px 22px;
+
+  color: var(--Text-Color1);
+  background-color: var(--Primary-Normal);
   transition: background var(--Transition-temp);
 }
 
@@ -391,6 +416,7 @@ header .container-menu {
 #about {
   padding-top: 187px;
   padding-bottom: 130px;
+
   background: var(--Bg-Gradient);
   background-color: var(--Primary-Normal);
 }
@@ -411,18 +437,21 @@ header .container-menu {
   font-weight: 400;
   font-size: 15px;
   line-height: 29px;
-  color: var(--Text-Color2);
+
   margin-top: 14px;
+  color: var(--Text-Color2);
 }
 
 #about .btn-primary {
-  background-color: var(--Text-Color1);
-  color: var(--Primary-Dark);
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+
   margin-top: 21px;
   margin-bottom: 86px;
+
+  color: var(--Primary-Dark);
+  background-color: var(--Text-Color1);
 }
 
 #about .btn-primary:hover {
@@ -464,6 +493,7 @@ header .container-menu {
 .border {
   padding-bottom: 32px;
   margin-bottom: 57px;
+
   border-bottom: 2px solid #b11be34b;
   border-image: linear-gradient(to right, #9907cc66, #9907cc, #9907cc66) 1;
 }
@@ -476,6 +506,7 @@ header .container-menu {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   color: var(--Text-Color2);
   margin-bottom: 16px;
 }
@@ -483,9 +514,10 @@ header .container-menu {
 .perfil {
   display: flex;
   justify-content: center;
-  gap: 20px;
+
   align-items: center;
   text-align: left;
+  gap: 20px;
 }
 
 .perfil .name {
@@ -505,10 +537,11 @@ header .container-menu {
 /* Footer */
 
 #footer {
-  background: var(--Bg-Gradient);
-  background-color: var(--Primary-Normal);
   padding-top: 62px;
+
+  background: var(--Bg-Gradient);
   color: var(--Text-Color2);
+  background-color: var(--Primary-Normal);
 }
 
 #footer .container {
@@ -523,7 +556,6 @@ header .container-menu {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  /* width: 100%; */
 }
 
 .logo-footer img {
@@ -533,8 +565,8 @@ header .container-menu {
 .social-links {
   display: flex;
   gap: 20px;
+
   margin-top: 28px;
-  margin-right: 20px;
   margin-bottom: 56px;
 }
 
@@ -543,13 +575,14 @@ header .container-menu {
 }
 
 .social-links .links a {
-  width: 100%;
   display: flex;
-  padding: 10px;
-  border-radius: 7px;
-  width: 39px;
   justify-content: center;
   align-items: center;
+
+  width: 39px;
+  padding: 10px;
+
+  border-radius: 7px;
   background: rgba(255, 255, 255, 0.15);
   transition: var(--Transition-temp);
 }
@@ -580,12 +613,13 @@ header .container-menu {
 }
 
 footer .title {
-  display: flex;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
-  gap: 8px;
+
+  display: flex;
   align-items: center;
+  gap: 8px;
   margin-bottom: 16px;
 }
 
@@ -608,10 +642,12 @@ footer .title {
 
 .signature {
   display: flex;
-  margin-top: 24px;
   justify-content: space-between;
+
+  margin-top: 24px;
   width: 100%;
   padding: 24px 0;
+
   border-top: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -629,18 +665,22 @@ footer .title {
 /* Btn Back To Top */
 
 #btn-back-to-top {
+  cursor: pointer;
+
   position: fixed;
-  display: flex;
   bottom: 55px;
   right: 35px;
-  cursor: pointer;
-  background: var(--Text-Color2);
+
+  display: flex;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   padding-left: 2px;
+
   opacity: 0;
   visibility: hidden;
+
+  background: var(--Text-Color2);
   transition: var(--Transition-temp);
   transform: translateY(60px);
 }
@@ -654,9 +694,10 @@ footer .title {
 
 #btn-back-to-top img {
   display: flex;
-  transform: rotate(179deg);
   width: 26px;
   height: 16px;
+
+  transform: rotate(179deg);
 }
 
 #btn-back-to-top {
@@ -674,6 +715,12 @@ footer .title {
 body.active #btn-back-to-top.show-btn {
   display: none;
 }
+
+/* Scrollreveal */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 /* Desktop */
 
 @media screen and (min-width: 990px) {
