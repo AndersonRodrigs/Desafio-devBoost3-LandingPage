@@ -7,7 +7,7 @@ function onScroll() {
 }
 
 function showNav() {
-  const navShow = document.querySelector(' .container-menu')
+  const navShow = document.querySelector('.container-menu')
   if (scrollY > 0) {
     navShow.classList.add('nav-menu')
   } else {

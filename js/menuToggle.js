@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const btnMobile = document.querySelector('#btn-mobile')
 const navLinks = document.querySelectorAll('.menu-links li')
 
@@ -37,12 +23,14 @@ function animatedLinks() {
     animation(link, index)
   })
   animation(buttonMenu, 4)
-  console.log("animou")
 }
 
 function closeMenu() {
-  body.classList.remove('active')
-  nav.classList.remove('active')
+  if (nav.classList.contains('active')) {
+    body.classList.remove('active')
+    nav.classList.remove('active')
+    animatedLinks()
+  }
 }
 
 btnMobile.addEventListener('click', toggleMenu)

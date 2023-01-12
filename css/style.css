@@ -200,11 +200,6 @@ header .container-menu {
     margin: 0;
   }
 
-  .menu-links li {
-    opacity: 0;
-    transition: 0.3s;
-  }
-
   .menu-links li a {
     font-size: 20px;
     padding: 1rem 0;
@@ -222,6 +217,11 @@ header .container-menu {
   .btn-menu {
     margin-top: 60px;
   }
+
+  .menu-links li {
+    opacity: 0;
+  }
+
   .btn-menu .btn-primary {
     opacity: 0;
   }
