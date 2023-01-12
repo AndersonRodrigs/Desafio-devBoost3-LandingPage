@@ -23,7 +23,7 @@ function showNav() {
 }
 
 function showBtnToTop() {
-  if (scrollY > 550) {
+  if (scrollY > 530) {
     btnToTop.classList.add('show-btn')
   } else {
     btnToTop.classList.remove('show-btn')
