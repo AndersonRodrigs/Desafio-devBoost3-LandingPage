@@ -13,8 +13,8 @@
   /* Colors */
   --Bg-Gradient: linear-gradient(
     180deg,
-    #040926 -6.13%,
-    rgba(153, 7, 204, 0.24) 124.8%
+    #040926 -13.13%,
+    rgba(153, 7, 204, 0.69) 182.37%
   );
 
   --Primary-Dark: #72009a;
@@ -87,8 +87,7 @@ body {
 
 header {
   padding-bottom: 20px;
-
-  background-color: var(--Primary-Normal);
+  height: 100vh;
   background: var(--Bg-Gradient);
 }
 
@@ -251,11 +250,11 @@ header .container-menu {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(80px);
+    transform: translateY(-40px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -319,7 +318,7 @@ header .container-menu {
 /* Section Benefits*/
 
 #benefits {
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 90px;
 }
 
@@ -418,10 +417,10 @@ header .container-menu {
   padding-bottom: 130px;
 
   background: var(--Bg-Gradient);
-  background-color: var(--Primary-Normal);
 }
 
 #about .container {
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -541,7 +540,6 @@ header .container-menu {
 
   background: var(--Bg-Gradient);
   color: var(--Text-Color2);
-  background-color: var(--Primary-Normal);
 }
 
 #footer .container {
@@ -790,11 +788,14 @@ html.sr .load-hidden {
   }
 
   .btn {
-    width: 100%;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
   }
 
+  .img-content img {
+    margin: 0;
+  }
   /* Section About */
 
   #about .container {
@@ -805,5 +806,9 @@ html.sr .load-hidden {
   .text-about {
     align-items: initial;
     text-align: left;
+  }
+
+  #about .btn-primary {
+    margin-bottom: 0;
   }
 }
