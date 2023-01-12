@@ -121,7 +121,7 @@ header .container-menu {
   position: relative;
 }
 
-.menu-links li a::after {
+#menu .menu-links li a::after {
   display: flex;
   content: '';
   position: absolute;
@@ -133,7 +133,11 @@ header .container-menu {
   transition: var(--Transition-temp);
 }
 
-.menu-links li:hover a::after {
+#menu .menu-links li:hover a::after {
+  width: 100%;
+}
+
+#menu .menu-links .active-link::after {
   width: 100%;
 }
 
@@ -160,15 +164,15 @@ header .container-menu {
 
 @media screen and (max-width: 900px) {
   #menu {
+    position: absolute;
     display: block;
     flex-direction: column;
-    position: absolute;
     width: 100%;
     top: 85px;
     right: 0px;
     height: 0px;
     background-color: var(--Secundary-Normal);
-    transition: 0.6s;
+    transition: 0.45s;
     overflow: hidden;
     visibility: hidden;
     z-index: 1000;
@@ -255,7 +259,7 @@ header .container-menu {
 #home {
   padding-top: 70px;
   top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #home .container {
@@ -298,7 +302,7 @@ header .container-menu {
 /* Section Benefits*/
 
 #benefits {
-  padding-top: 180px;
+  padding-top: 200px;
   padding-bottom: 90px;
 }
 
@@ -626,20 +630,19 @@ footer .title {
 
 #btn-back-to-top {
   position: fixed;
+  display: flex;
   bottom: 55px;
   right: 35px;
   cursor: pointer;
-  background: var(--Text-Color1);
-  width: 48px;
-  height: 48px;
+  background: var(--Text-Color2);
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   padding-left: 2px;
-  transition: background 0.3s;
-  z-index: 1;
-}
-
-#btn-back-to-top:hover {
-  background: #ae05ec27;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--Transition-temp);
+  transform: translateY(60px);
 }
 
 #btn-back-to-top a {
@@ -652,16 +655,24 @@ footer .title {
 #btn-back-to-top img {
   display: flex;
   transform: rotate(179deg);
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 16px;
 }
 
 #btn-back-to-top {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 #btn-back-to-top.show-btn {
   display: flex;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+body.active #btn-back-to-top.show-btn {
+  display: none;
 }
 /* Desktop */
 

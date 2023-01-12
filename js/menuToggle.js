@@ -1,6 +1,7 @@
 const btnMobile = document.querySelector('#btn-mobile')
 const navLinks = document.querySelectorAll('.menu-links li')
 
+
 const buttonMenu = document.querySelector('.btn-menu .btn-primary')
 
 const nav = document.querySelector('#nav')
