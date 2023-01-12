@@ -87,7 +87,6 @@ body {
 
 header {
   padding-bottom: 20px;
-  height: 100vh;
   background: var(--Bg-Gradient);
 }
 
@@ -728,9 +727,14 @@ html.sr .load-hidden {
 
   /* Section About */
   #about .container {
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
   }
 
+  #about .btn-primary {
+    margin-bottom: 0;
+  }
   .text-sections,
   .text-about {
     align-items: initial;
@@ -777,9 +781,8 @@ html.sr .load-hidden {
   /* Section Home */
   #home .container {
     width: 100%;
-    gap: 100px;
+    gap: 170px;
     align-items: center;
-    justify-content: space-between;
   }
 
   .text-content {
@@ -799,7 +802,8 @@ html.sr .load-hidden {
   /* Section About */
 
   #about .container {
-    justify-content: space-between;
+    gap: 160px;
+    justify-content: center;
   }
 
   .text-sections,
@@ -811,11 +815,14 @@ html.sr .load-hidden {
   #about .btn-primary {
     margin-bottom: 0;
   }
+  .cards-testimonials {
+    gap: 170px;
+  }
 }
 
 /* Scrollbar */
 
-* {
+/* * {
   scrollbar-width: thin;
   scrollbar-color: var(--Text-Color1);
 }
@@ -831,4 +838,4 @@ html.sr .load-hidden {
 *::-webkit-scrollbar-thumb {
   background-color: var(--Primary-Normal);
   border-radius: 2px;
-}
+} */
