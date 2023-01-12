@@ -812,3 +812,23 @@ html.sr .load-hidden {
     margin-bottom: 0;
   }
 }
+
+/* Scrollbar */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--Text-Color1);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--Text-Color2);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--Primary-Normal);
+  border-radius: 2px;
+}
